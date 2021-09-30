@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  flex: 1 0 auto;
+  min-height: calc(100vh - 114px);
+  padding: 1.5rem 0;
+}
+
+.page-footer {
+  padding-top: 0;
+}
+
+.category-list,
+.meal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+}
+
+.card-image {
+  padding-bottom: 30px;
+}
+
+.card-content{
+  flex-grow: 1;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding-top: 0 !important;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+  width: 600px;
+  height: 350px;
+}
