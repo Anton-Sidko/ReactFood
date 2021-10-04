@@ -12,7 +12,7 @@ function Header() {
                     <Link to="/contacts">Contacts</Link>
                 </li>
                 <li>
-                    <a href="https://github.com/Anton-Sidko/ReactShop" target="_blank" rel="noreferrer">Repo</a>
+                    <a href="https://github.com/Anton-Sidko/ReactFood" target="_blank" rel="noreferrer">Repo</a>
                 </li>
             </ul>
         </div>

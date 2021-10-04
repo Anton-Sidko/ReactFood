@@ -3,6 +3,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import { getMealById } from '../api';
 
 import { Preloader } from '../components/Preloader';
+import { UpButton } from '../components/UpButton';
 
 function Recipe() {
     const {id} = useParams();
@@ -30,8 +31,8 @@ function Recipe() {
                     <img src={preview} alt={title} />
                     <h1>{title}</h1>
                     <div className="short-info">
-                        <h6>Category: {category}</h6>
-                        {area ? <h6>Area: {area}</h6> : null}
+                        <h6><strong>Category:</strong> {category}</h6>
+                        {area ? <h6><strong>Area:</strong> {area}</h6> : null}
                     </div>
                     <p>{mealRecipe}</p>
 
@@ -63,13 +64,16 @@ function Recipe() {
 
                     {strYoutube ? (
                         <div className="row">
-                            <h5>Video recipe</h5>
+                            <h4>Video recipe</h4>
                             <iframe src={`https://www.youtube.com/embed/${strYoutube.slice(-11)}`} title={idMeal} allowFullScreen></iframe>
                         </div>
                     ) : null}
                 </div>
             )}
-            <button className="btn" onClick={goBack}>Go back</button>
+            <button className="btn btn-centered" onClick={goBack}>Go back</button>
+            {!idMeal ? null : (
+                <UpButton />
+            )}
         </>
     )
 }

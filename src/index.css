@@ -67,3 +67,64 @@ iframe {
   width: 600px;
   height: 350px;
 }
+
+.more-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0 5px;
+}
+
+.more-btn,
+.upBtn {
+  color: #26a69a;
+  display: inline-block;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.more-btn-wrap span {
+  font-size: 20px;
+}
+
+.more-btn:hover {
+  transform: rotate(90deg);
+}
+
+.upBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  left: 25px;
+}
+
+.recipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.short-info {
+  display: flex;
+  align-items: center;
+}
+
+.short-info h6{
+  margin-right: 30px;
+}
+
+.recipe .row {
+  text-align: center;
+}
+
+.btn-centered {
+  display: block;
+  margin: 0 auto;
+}
+
+.search-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
